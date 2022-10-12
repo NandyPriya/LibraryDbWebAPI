@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "librarydbinwebapi", "librarydbinwebapi\librarydbinwebapi.csproj", "{F6371ECC-C3C6-4016-B1DE-20FE6B49F7FF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{47EB85EF-5873-4162-9278-475D18FFBB0D} = {47EB85EF-5873-4162-9278-475D18FFBB0D}
+		{DAC07455-ACDE-46C7-A110-4830C6BF626A} = {DAC07455-ACDE-46C7-A110-4830C6BF626A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "library_BAL", "..\library_BAL\library_BAL\library_BAL.csproj", "{DAC07455-ACDE-46C7-A110-4830C6BF626A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library_DAL", "..\library_BAL\Library_DAL\Library_DAL.csproj", "{6884503E-A449-43EA-BCD0-2A713A484737}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DAC07455-ACDE-46C7-A110-4830C6BF626A} = {DAC07455-ACDE-46C7-A110-4830C6BF626A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "library_helper", "..\library_BAL\library_helper\library_helper.csproj", "{47EB85EF-5873-4162-9278-475D18FFBB0D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6884503E-A449-43EA-BCD0-2A713A484737} = {6884503E-A449-43EA-BCD0-2A713A484737}
+		{DAC07455-ACDE-46C7-A110-4830C6BF626A} = {DAC07455-ACDE-46C7-A110-4830C6BF626A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6371ECC-C3C6-4016-B1DE-20FE6B49F7FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6371ECC-C3C6-4016-B1DE-20FE6B49F7FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6371ECC-C3C6-4016-B1DE-20FE6B49F7FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6371ECC-C3C6-4016-B1DE-20FE6B49F7FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAC07455-ACDE-46C7-A110-4830C6BF626A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC07455-ACDE-46C7-A110-4830C6BF626A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC07455-ACDE-46C7-A110-4830C6BF626A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC07455-ACDE-46C7-A110-4830C6BF626A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6884503E-A449-43EA-BCD0-2A713A484737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6884503E-A449-43EA-BCD0-2A713A484737}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6884503E-A449-43EA-BCD0-2A713A484737}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6884503E-A449-43EA-BCD0-2A713A484737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47EB85EF-5873-4162-9278-475D18FFBB0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47EB85EF-5873-4162-9278-475D18FFBB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47EB85EF-5873-4162-9278-475D18FFBB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47EB85EF-5873-4162-9278-475D18FFBB0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A7FE80A-BBF8-4463-9A1F-ADFF05B5DBD1}
+	EndGlobalSection
+EndGlobal
